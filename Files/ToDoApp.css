@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Merienda", cursive;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#92ceff), to(#34bfff));
+  background-image: linear-gradient(to bottom, #92ceff, #34bfff);
+}
+
+.mainContainer {
+  background-color: skyblue;
+  min-height: 75vh;
+  min-width: 28vw;
+  border-radius: 5%;
+  -webkit-box-shadow: 5px 10px 15px #7a7a7a;
+          box-shadow: 5px 10px 15px #7a7a7a;
+}
+
+header {
+  font-size: 30px;
+  text-align: center;
+}
+
+.inputField {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.inputField input {
+  font-size: 18px;
+  height: 40px;
+  width: 270px;
+  outline: none;
+  padding-left: 15px;
+}
+
+.inputField input:focus {
+  border: 1px solid #ff22ff;
+}
+
+.inputField button {
+  margin-left: 5px;
+  width: 45px;
+  height: 40px;
+  color: #fff;
+  outline: none;
+  background: #ff42ff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 50px;
+  pointer-events: none;
+}
+
+.inputField button.active {
+  pointer-events: auto;
+  background-color: #e000e0;
+}
+
+.inputField button i {
+  font-size: 25px;
+}
+
+.todolist {
+  height: 300px;
+  width: 325px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  overflow-y: auto;
+}
+
+.todolist li {
+  position: relative;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+}
+
+.todolist li .icon {
+  position: absolute;
+  right: 0;
+  background: #e74c3c;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.todolist li .icon:hover {
+  background: #ff1f06;
+}
+
+.footer {
+  width: 325px;
+  margin: auto;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer button {
+  margin-left: 4px;
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  background: #ff42ff;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.footer button.active {
+  pointer-events: auto;
+  background-color: #e000e0;
+}
+/*# sourceMappingURL=ToDoApp.css.map */

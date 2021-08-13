@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Merienda", cursive;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgb(146, 206, 255), rgb(52, 191, 255));
+}
+
+.mainContainer {
+    background-color: skyblue;
+    min-height: 75vh;
+    min-width: 28vw;
+    border-radius: 5%;
+    box-shadow: 5px 10px 15px rgb(122, 122, 122);
+}
+header {
+    font-size: 30px;
+    text-align: center;
+}
+.inputField {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.inputField input {
+    font-size: 18px;
+    height: 40px;
+    width: 270px;
+    outline: none;
+    padding-left: 15px;
+    &:focus {
+        border: 1px solid rgb(255, 34, 255);
+    }
+}
+.inputField button {
+    margin-left: 5px;
+    width: 45px;
+    height: 40px;
+    color: #fff;
+    outline: none;
+    background: rgb(255, 66, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    width: 50px;
+    pointer-events: none;
+}
+
+.inputField button.active {
+    pointer-events: auto;
+    background-color: rgb(224, 0, 224);
+}
+.inputField button i {
+    font-size: 25px;
+}
+
+.todolist {
+    height: 300px;
+    width: 325px;
+    margin: auto;
+    // background-color: saddlebrown;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+.todolist li {
+    position: relative;
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 0 15px;
+    cursor: default;
+}
+
+.todolist li .icon {
+    position: absolute;
+    right: 0;
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+        background: #ff1f06;
+    }
+}
+
+.footer {
+    width: 325px;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    align-items: center;
+}
+
+.footer button {
+    margin-left: 4px;
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    background: rgb(255, 66, 255);
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.footer button.active {
+    pointer-events: auto;
+    background-color: rgb(224, 0, 224);
+}

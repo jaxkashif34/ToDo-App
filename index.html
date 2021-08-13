@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./Files/ToDoApp.css">
+    <!-- Main JS File -->
+    <script src="./Files/ToDoApp.js" defer></script>
+    <!-- Onlie CDN link -->
+    <script src="https://kit.fontawesome.com/cb22ce1b64.js" crossorigin="anonymous"></script>
+    <title>ToDo APP</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header>ToDo App</header>
+        <div class="inputField">
+            <input type="text" id="inputTxt" placeholder="Enter ToDo Work">
+            <button><i class="fas fa-plus"></i></button>
+        </div>
+        <ul class="todolist">
+            <!-- Data are Commin From Local Storage -->
+        </ul>
+        <div class="footer">
+            <span>You have <span class="pendingTasks"></span>pending tasks</span>
+            <button>Clear All</button>
+        </div>
+    </div>
+</body>
+
+</html>
